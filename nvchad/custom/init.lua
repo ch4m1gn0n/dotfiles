@@ -70,7 +70,7 @@ function! s:myLocalDb()
         call ZFVimIM_cloudRegister({
                     \   'mode' : 'local',
                     \   'dbId' : db['dbId'],
-                    \   'repoPath' : '/home/ch4m1gn0n/.config/',  
+                    \   'repoPath' : '~/.config/',  
                     \   'dbFile' : '/wubi.txt', 
                     \ })
     endif
@@ -91,7 +91,7 @@ map("v", ",q", "ZFVimIME_keymap_toggle_v()", {expr = true})
 
 -- vim-table-mode更改为markdown语法
 vim.g.table_mode_corner='|'
-vim.g.mkdp_markdown_css='/home/ch4m1gn0n/Downloads/github-markdown.css'
+vim.g.mkdp_markdown_css='https://raw.githubusercontent.com/sindresorhus/github-markdown-css/main/github-markdown.css'
 -- vim.g:mkdp_highlight_css = ''
 
 -- 设置 默认 terminal
