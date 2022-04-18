@@ -1,5 +1,19 @@
 -- /lua/custom/plugins/init.lua
 return {
+    { "stevearc/aerial.nvim",
+        config = function()
+            require'custom.plugins.aerial'.setup()
+        end
+
+    },
+    { "ahmedkhalf/project.nvim",
+        config = function()
+            require'custom.plugins.project'.setup()
+        end
+    },
+    -- {"nvim-telescope/telescope-project.nvim"},
+    -- {"nvim-treesitter/nvim-treesitter-textobjects"},
+    -- {"romgrk/nvim-treesitter-context"},
     { "mg979/vim-visual-multi" },
     {
         "folke/which-key.nvim",
