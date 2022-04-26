@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo pacman -Syyu
 pac_soft='base-devel zsh ranger tmux git neovim wget neofetch unzip python-pip nodejs npm yarn go fd ripgrep lazygit ibus-rime'
 sudo pacman -S $pac_soft
 
@@ -16,6 +17,8 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search
 git clone https://github.com/agkozak/zsh-z $ZSH_CUSTOM/plugins/zsh-z
+
+git clone https://github.com/ch4m1gn0n/rime-wubi86-jidian ~/.config/ibus/rime
 
 cp -r ./nvim ~/.config/nvim
 cp -rif ./.zshrc ~/.zshrc
