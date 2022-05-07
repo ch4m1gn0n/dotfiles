@@ -23,3 +23,6 @@ git clone https://github.com/ch4m1gn0n/rime-wubi86-jidian ~/.config/ibus/rime
 cp -r ./nvim ~/.config/nvim
 cp -rif ./.zshrc ~/.zshrc
 cp -rif ./.tmux.conf ~/.tmux.conf
+
+
+yay -S Xampp

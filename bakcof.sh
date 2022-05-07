@@ -1,1 +1,1 @@
-ln -s ~/dotfiles/nvchad/custom ~/.config/nvim/lua/
+cp -r ~/.config/nvim ~/dotfiles/nvim
