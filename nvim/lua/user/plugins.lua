@@ -51,6 +51,7 @@ return packer.startup(function(use)
 	use("ZSaberLv0/ZFVimIM")
 	use("ZSaberLv0/ZFVimJob")
 	use("easymotion/vim-easymotion")
+	use("mg979/vim-visual-multi")
 
 	use("windwp/nvim-autopairs") -- Autopairs, integrates with both cmp and treesitter
 	-- use "numToStr/Comment.nvim" -- Easily comment stuff
@@ -73,7 +74,10 @@ return packer.startup(function(use)
 	use("sainnhe/gruvbox-material")
 	use("morhetz/gruvbox")
 	use("sainnhe/sonokai")
-	-- use "lunarvim/darkplus.nvim"
+	use("xiyaowong/nvim-transparent")
+	use("lunarvim/darkplus.nvim")
+	-- use("navarasu/onedark.nvim")
+	use("joshdick/onedark.vim")
 
 	-- -- cmp plugins
 	use("hrsh7th/nvim-cmp") -- The completion plugin

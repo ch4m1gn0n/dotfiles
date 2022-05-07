@@ -102,6 +102,7 @@ local mappings = {
   -- ["s"] = { "<cmd>Telescope current_buffer_fuzzy_find theme=ivy<cr>", "Search" },
   ["t"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
 	["r"] = { "<cmd>Telescope oldfiles<cr>", "Open Recent File" },
+  ["p"]	= { "<cmd>Telescope projects<cr>", "Projects" },
 	-- f = {
 	-- 	name = "Find",
 	-- 	f = {
@@ -254,7 +255,7 @@ function setKeybinds()
 
 	if fileTy == "markdown" then
 		which_key.register({
-			["p"] = { ":MarkdownPreviewToggle<CR>", "Markdown Preview" },
+			["v"] = { ":MarkdownPreviewToggle<CR>", "Markdown Preview" },
 			["y"] = { ":call mdip#MarkdownClipboardImage()<CR>", "Yank Image" },
 		}, opt)
 	end

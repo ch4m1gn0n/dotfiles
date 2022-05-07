@@ -41,6 +41,8 @@ vim.cmd [[
     autocmd!
 
     autocmd FileType markdown setlocal wrap
+    autocmd FileType markdown let g:vim_markdown_follow_anchor = 1
+    autocmd FileType markdown let g:vim_markdown_no_extensions_in_markdown = 1
     autocmd FileType markdown xnoremap <buffer> <A-l> :HeaderIncrease<cr>
     autocmd FileType markdown xnoremap <buffer> <A-h> :HeaderDecrease<cr>
     autocmd FileType markdown nnoremap <buffer> H g^
