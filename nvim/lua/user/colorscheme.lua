@@ -2,16 +2,18 @@
 -- if not status_ok then
 --   return
 -- end
+
 vim.cmd [[
 try
-  colorscheme onedark
-  let g:onedark_termcolors=256
+  colorscheme gruvbox-material
 catch /^Vim\%((\a\+)\)\=:E185/
   colorscheme default
   set background=light
 endtry
 ]]
 
+    -- colorscheme onedark
+    -- let g:onedark_termcolors=256
 -- vim.g.gruvbox_material_background = 'soft'
 -- onedark.setup{
 --     -- Main options --
